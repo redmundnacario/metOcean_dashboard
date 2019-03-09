@@ -13,7 +13,7 @@
     "ajv": "^6.10.0",
     "apexcharts": "^3.5.1",
     "bootstrap": "^4.3.1",
-    "jquery": "^1.9.1",
+    "jquery": "^1.12.4",
     "lodash": "^4.17.11",
     "pandas-js": "^0.2.4",
     "popper.js": "^1.14.7",

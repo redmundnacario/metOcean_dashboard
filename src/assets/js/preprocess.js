@@ -82,6 +82,7 @@ export const preprocessData = function(data_csv, data_json) {
   var result = df_json.merge(df_csv,["unix_datetime"] , 'outer');
   // console.log(result.toString())
   result = result.to_json({orient: 'records'})
+  // Sort array object by datetime
   result= _.sortBy(result, "unix_datetime")
   // console.log(result)
 
