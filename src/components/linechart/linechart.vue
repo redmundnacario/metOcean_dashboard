@@ -1,25 +1,25 @@
 <template>
-    <div id="sync-linechart" class="row">
+    <div id="sync-linechart" class="row mt-3">
         <!-- <VueApexCharts type="line" height=350 :options="chartOptionsLine1" :series="series1" />
         <VueApexCharts type="line" height=350 :options="chartOptionsLine2" :series="series2" />
         <VueApexCharts type="area" height=350 :options="chartOptionsArea" :series="series3" /> -->
     
         <div class="col-lg-6 col-12">
-            <div id="chart-line">
+            <div class="charts mb-3 p-3">
                 <VueApexCharts type=area height=250 :options="chartOptionsArea" :series="wave_height" />
             </div>
 
-            <div id="chart-area">
+            <div class="charts mb-3 p-3">
                 <VueApexCharts type=line height=250 :options="chartOptionsLine3" :series="temp"/>
             </div>
         </div>
          
         <div class="col-lg-6 col-12">
-            <div id="chart-line2">
+            <div class="charts mb-3 p-3">
                 <VueApexCharts type=area height=250 :options="chartOptionsLine2" :series="wind_speed" />
             </div>
 
-            <div id="chart-area">
+            <div class="charts mb-3 p-3">
                 <VueApexCharts type=area height=250 :options="chartOptionsLine1" :series="sea_water_speed"/>
             </div>
         </div>
@@ -134,7 +134,11 @@ export default {
                 colors: ['#00E396'],
                 title: {
                         text: 'Surface Sea Water Speed',
-                        align: 'left'
+                        align: 'left',
+                        style: {
+                            fontSize:  '16px',
+                            color:  '#263238'
+                        },
                     },
 
                 yaxis: {
@@ -171,7 +175,11 @@ export default {
                 colors: ['#546E7A'],
                 title: {
                         text: 'Wind Speed at 10m Above Ground Level',
-                        align: 'left'
+                        align: 'left',
+                        style: {
+                            fontSize:  '16px',
+                            color:  '#263238'
+                        },
                     },
                 yaxis: {
                     title: {
@@ -207,7 +215,11 @@ export default {
                 colors: ['#FFA500'],
                 title: {
                         text: 'Air Temperature [ 2m ]',
-                        align: 'left'
+                        align: 'left',
+                        style: {
+                            fontSize:  '16px',
+                            color:  '#263238'
+                        },
                     },
                 yaxis: {
                     title: {
@@ -241,7 +253,11 @@ export default {
                 },
                 title: {
                         text: 'Sea Surface Wave Height',
-                        align: 'left'
+                        align: 'left',
+                        style: {
+                            fontSize:  '16px',
+                            color:  '#263238'
+                        },
                     },
                 colors: ['#008FFB', '#FF0000'],
                 yaxis: {
@@ -278,6 +294,10 @@ export default {
 </script>
 
 <style>
-
+.charts {
+    background: #fff;
+    border-radius: .5rem;
+    box-shadow: 0 4px 25px 0 rgba(0,0,0,.1);
+}
 </style>
 

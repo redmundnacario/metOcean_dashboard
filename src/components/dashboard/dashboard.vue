@@ -1,6 +1,6 @@
 <template>
      <div id="dashboard" class="container">
-        <h1>MetOcean Dashboard</h1>
+        <span><h1><img class="img-fluid logo" src="@/assets/images/MetService.png" alt=""> MetOcean Dashboard</h1></span>
         <!-- <button class="btn-success">Hello</button> -->
         <div class="col">
             
@@ -96,7 +96,9 @@ export default {
 </script>
 
 <style>
-
+.logo {
+    width:60px;
+}
 </style>
 
 
