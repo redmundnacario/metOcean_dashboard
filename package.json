@@ -15,6 +15,7 @@
     "bootstrap": "^4.3.1",
     "jquery": "^1.12.4",
     "lodash": "^4.17.11",
+    "moment": "^2.24.0",
     "pandas-js": "^0.2.4",
     "popper.js": "^1.14.7",
     "vue": "^2.5.2",
