@@ -13,7 +13,6 @@
     "ajv": "^6.10.0",
     "apexcharts": "^3.5.1",
     "bootstrap": "^4.3.1",
-    "jquery": "^1.12.4",
     "lodash": "^4.17.11",
     "moment": "^2.24.0",
     "pandas-js": "^0.2.4",
