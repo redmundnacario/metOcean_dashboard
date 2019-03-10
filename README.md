@@ -1,6 +1,9 @@
-# metocean_dashboard
-
+# MetOcean dashboard
 > A dashboard displaying different weather variables concerning atmosphere and ocean interactions
+
+>created by: Redmund Nacario
+
+>email: redmund.nacario@gmail.com
 
 ## Build Setup
 
