@@ -85,6 +85,10 @@ Apex = {
       },
       yaxis: {
         tickAmount: 4,
+        labels: {
+            minWidth: 0,
+            maxWidth: 100,
+        }
       },
       xaxis: {
         type: 'datetime',

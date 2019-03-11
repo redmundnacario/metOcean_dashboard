@@ -46,7 +46,7 @@ export default {
     },
     created () {
         var result = preprocessData(this.data_csv, this.data_json)
-        console.log(_.keys(result))
+        // console.log(_.keys(result))
         // console.log(_.zip(_.values(result["unix_datetime"]), _.values(result["surface_sea_water_speed"])))
         this.sea_water_speed = [
             {
@@ -56,7 +56,7 @@ export default {
             }
         ]
         this.sea_water_speed_dir = _.values(result["sea_surface_wave_from_direction_cardinal_at_variance_spectral_density_maximum"])
-        console.log(this.sea_water_speed_dir)
+        // console.log(this.sea_water_speed_dir)
 
         this.wind_speed = [
             {
