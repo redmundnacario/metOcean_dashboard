@@ -37,6 +37,9 @@ import apexcharts from 'apexcharts'
 import moment from 'moment'
 
 Apex = {
+    //   chart : {
+    //       width:'100%'
+    //   },
       dataLabels: {
         enabled: false
       },
@@ -81,18 +84,27 @@ Apex = {
         clipMarkers: true,
         row: {
             colors: ['#fff', '#f2f2f2']
-          }
+          },
+        padding: {
+            top: 0,
+            right: 10,
+            bottom: -15,
+            left: -10,
+        },  
       },
       yaxis: {
         tickAmount: 4,
         labels: {
-            minWidth: 0,
-            maxWidth: 100,
+            minWidth: 80,
+            // maxWidth: 350,
+            offsetX:-20,
         }
       },
       xaxis: {
         type: 'datetime',
         labels:{
+            // minHeight: 10,
+            // offsetY:5,
             formatter: function(value, timestamp, index) {
                 return moment(new Date(value)).format("MMM DD, YYYY")
             }
@@ -103,6 +115,12 @@ Apex = {
                 return moment(new Date(value)).utc().format("MMM-DD HH:00z")
             }
         },
+        // floating: true,
+        title: {
+            // offsetY : 5,
+            text: 'Datetime'
+        },
+        
     }
 }
 
@@ -147,7 +165,7 @@ export default {
 
                 yaxis: {
                     title: {
-                        text: '[ meters / second ]'
+                        text: '[ meters / second ]',
                         },
                     min: 0,
                     max: 0.1,
@@ -187,7 +205,7 @@ export default {
                     },
                 yaxis: {
                     title: {
-                        text: '[ meters / second ]'
+                        text: '[ meters / second ]',
                         },
                     min: 0,
                     max: 20,
@@ -227,7 +245,7 @@ export default {
                     },
                 yaxis: {
                     title: {
-                        text: '[ Kelvin ]'
+                        text: '[ Kelvin ]',
                         },
                     min: 278,
                     max: 284,
@@ -266,7 +284,12 @@ export default {
                 colors: ['#008FFB', '#FF0000'],
                 yaxis: {
                     title: {
-                        text: '[ meters ]'
+                        text: '[ meters ]',
+                        // labels: {
+                        //     show: true,
+                        //     minWidth: 0,
+                        //     maxWidth: 10,
+                        //     }
                         },
                     min: 0,
                     max: 12,
